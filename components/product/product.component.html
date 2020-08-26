@@ -1,0 +1,7 @@
+<h3>{{ product.title }}</h3>
+<img [src]="product.image" [alt]="product.title">
+<strong>{{ product.price | currency }}</strong>
+<br>
+<a routerLink="/products/{{ product.id }}">Detalles</a>
+<br>
+<button (click)="addCart()">Agregar al carrito</button>
